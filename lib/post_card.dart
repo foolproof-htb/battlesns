@@ -56,7 +56,7 @@ class _PostCardState extends State<PostCard> {
             height: 8,
           ),
           // 投稿内容
-          Row(children: [Text(post.body)]),
+          Row(children: [Expanded(child: Text(post.body))]),
           const SizedBox(
             height: 8,
           ),
