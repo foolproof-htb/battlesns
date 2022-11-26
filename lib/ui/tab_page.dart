@@ -1,7 +1,7 @@
-import 'package:battlesns/duel_page.dart';
-import 'package:battlesns/ranking_page.dart';
-import 'package:battlesns/search_page.dart';
-import 'package:battlesns/timeline_page.dart';
+import 'package:battlesns/ui/duel/duel_page.dart';
+import 'package:battlesns/ui/ranking/ranking_page.dart';
+import 'package:battlesns/ui/search/search_page.dart';
+import 'package:battlesns/ui/timeline/timeline_page.dart';
 import 'package:flutter/material.dart';
 
 class TabPage extends StatefulWidget {

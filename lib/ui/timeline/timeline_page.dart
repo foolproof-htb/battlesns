@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:battlesns/create_post_page.dart';
-import 'package:battlesns/post_card.dart';
-import 'package:battlesns/post.dart';
+import 'package:battlesns/ui/timeline/create_post_page.dart';
+import 'package:battlesns/widget/post_card.dart';
+import 'package:battlesns/model/post.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 

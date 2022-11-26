@@ -5,6 +5,7 @@
       "account": "@noritake",
       "name": "木梨 憲武",
       "body": "こんにちは",
+      "like": 12,
       "createdAt": "2022/10/10 12:25"
     },
     {
@@ -12,6 +13,7 @@
       "account": "@moriyasu",
       "name": "森保修司",
       "body": "面接でリーダーシップがある人材を見分ける方法は実は簡単。採用についてのポイントは以下のURLにまとめております。http://...",
+      "like": 7,
       "createdAt": "2022/10/10 12:25"
     },
     {
@@ -19,6 +21,7 @@
       "account": "@noritake",
       "name": "木梨 憲武",
       "body": "個展を開催します。",
+      "like": 4,
       "createdAt": "2022/10/10 12:25"
     },
     {
@@ -26,6 +29,7 @@
       "account": "@funny_kouta",
       "name": "すぎやまこうた@高円寺bitroom",
       "body": "久々にバックトゥーザフューチャー見たけどやっぱおもろい！",
+      "like": 1,
       "createdAt": "2022/10/10 12:25"
     },
     {
@@ -33,6 +37,7 @@
       "account": "@catcat",
       "name": "ヒバリ",
       "body": "昨日喋りすぎて喉を痛めた。のど飴のど飴…",
+      "like": 15,
       "createdAt": "2022/10/10 12:25"
     },
     {
@@ -40,6 +45,7 @@
       "account": "@symphony",
       "name": "矜持ﾁｬﾝ",
       "body": "いい天気なのに近所に無印良品がない。",
+      "like": 10,
       "createdAt": "2022/10/10 12:25"
     },
     {
@@ -47,7 +53,46 @@
       "account": "@gAGjgnkvJ",
       "name": "源泉徴収",
       "body": "映画ドラえもん のび太の公共交通機関",
+      "like": 8,
       "createdAt": "2022/10/10 12:25"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "account": "@noritake",
+      "name": "木梨 憲武",
+      "totalLike": 32
+    },
+    {
+      "id": 2,
+      "account": "@moriyasu",
+      "name": "森保修司",
+      "totalLike": 41
+    },
+    {
+      "id": 4,
+      "account": "@funny_kouta",
+      "name": "すぎやまこうた@高円寺bitroom",
+      "totalLike": 22
+    },
+    {
+      "id": 5,
+      "account": "@catcat",
+      "name": "ヒバリ",
+      "totalLike": 76
+    },
+    {
+      "id": 6,
+      "account": "@symphony",
+      "name": "矜持ﾁｬﾝ",
+      "totalLike": 18
+    },
+    {
+      "id": 7,
+      "account": "@gAGjgnkvJ",
+      "name": "源泉徴収",
+      "totalLike": 55
     }
   ]
 }

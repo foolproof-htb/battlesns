@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'tab_page.dart';
-import 'timeline_page.dart';
-import 'create_post_page.dart';
+import 'ui/tab_page.dart';
+import 'ui/timeline/timeline_page.dart';
+import 'ui/timeline/create_post_page.dart';
 
 void main() {
   runApp(const Infenvy());
@@ -19,7 +19,7 @@ class Infenvy extends StatelessWidget {
       ),
       home: TabPage(),
       routes: <String, WidgetBuilder>{
-        '/timeline': (BuildContext context) => TimelinePage(),
+        '/home': (BuildContext context) => TabPage(),
         '/new': (BuildContext context) => CreatePostPage()
       },
     );
