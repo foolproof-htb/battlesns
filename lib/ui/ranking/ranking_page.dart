@@ -15,9 +15,15 @@ class _RankingPageState extends State<RankingPage> {
     final url = Uri.parse('http://10.0.2.2:3030/users');
     http.Response response = await http.get(url);
     List<dynamic> json = jsonDecode(response.body);
+    List<User> userData = json.map((data) => User.formJson(data)).toList();
+
+    // バックエンドがないので一旦ここでソート
+    userData.sort(
+      (a, b) => b.totalLike.compareTo(a.totalLike),
+    );
 
     setState(() {
-      users = json.map((data) => User.formJson(data)).toList();
+      users = userData;
     });
   }
 
@@ -37,7 +43,7 @@ class _RankingPageState extends State<RankingPage> {
             .asMap()
             .entries
             .map((entry) =>
-                RankingCard(user: entry.value, rank: entry.key.toInt()))
+                RankingCard(user: entry.value, rank: entry.key.toInt() + 1))
             .toList(),
       )),
     );

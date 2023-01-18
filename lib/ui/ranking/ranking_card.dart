@@ -18,14 +18,48 @@ class _RankingState extends State<RankingCard> {
     int rank = widget.rank;
 
     return Card(
+      elevation: 0,
+      color: const Color.fromRGBO(255, 255, 255, 0),
       child: Column(
         children: <Widget>[
           Row(
             children: [
-              Text('$rank位'),
-              Text(user.name),
-              Text(user.account),
-              Text(user.totalLike.toString())
+              Container(
+                margin: const EdgeInsets.only(right: 12),
+                child: Text(
+                  '$rank位',
+                  style: const TextStyle(fontSize: 16),
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.only(right: 8),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(user.name, style: const TextStyle(fontSize: 16)),
+                    Text(user.account, style: const TextStyle(fontSize: 12)),
+                  ],
+                ),
+              ),
+              Row(
+                children: [
+                  const Text(
+                    '累計',
+                    style: TextStyle(fontSize: 12),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(left: 4, right: 4),
+                    child: Text(
+                      user.totalLike.toString(),
+                      style: const TextStyle(fontSize: 16),
+                    ),
+                  ),
+                  const Text(
+                    'いいね',
+                    style: TextStyle(fontSize: 12),
+                  ),
+                ],
+              ),
             ],
           )
         ],

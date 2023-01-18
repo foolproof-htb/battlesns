@@ -16,7 +16,7 @@ class User {
       id: json['id'] as int,
       account: json['account'] as String,
       name: json['name'] as String,
-      totalLike: json['like'] as int,
+      totalLike: json['totalLike'] as int,
     );
   }
 }
